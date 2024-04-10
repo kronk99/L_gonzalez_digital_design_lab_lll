@@ -1,4 +1,4 @@
-module FSM(input Btn, rst, clk,T,V, VJ, VP,NBarcos output Timer, Turno, CJug, CPC, Barcos, Casilla);
+module FSM(input Btn, rst, clk,T,V, VJ, VP,NBarcos, output Timer, Turno, CJug, CPC, Barcos, Casilla);
 
 logic [2:0] state, next_state; //Necesito 3 bits porque son 6 estados
 
@@ -12,13 +12,13 @@ always_ff @ (posedge clk or posedge rst)
 always_comb
 	case(state)
 		3'b000: if (Btn) next_state = 3'b001; else next_state = 3'b000; //Estado de seleccion de # barcos
-		3'b001: if (Btn) next_state = 3'b010; else if (T) next_state = 3'b011; else next_state = 3'b001; //Estado de turno de jugador
-		3'b010: if (V) next_state = 3'011; //Estado comprobar casilla jugador
-		3'b011: if (M) next_state=3'b000; else next_state = 3'b111; //Estado comprobar victoria jugador
-		3'b100: //Estado turno PC
-		3'b101: //Estado comprobar casilla PC
-		3'b110: //Estado comprobar victoria PC
-		3'b111: next_state = 3'b111//Fin del juego
+		3'b001: if (Btn) next_state = 3'b010; else if (T) next_state = 3'b100; else next_state = 3'b001; //Estado de turno de jugador
+		3'b010: if (V) next_state = 3'b011; else next_state = 3'b001; //Estado comprobar casilla jugador
+		3'b011: if (VJ) next_state=3'b111; else next_state = 3'b100; //Estado comprobar victoria jugador
+		3'b100: next_state = 3'b101;//Estado turno PC
+		3'b101: if (V) next_state = 3'b110; else next_state = 3'b100;//Estado comprobar casilla PC
+		3'b110: if (VP) next_state = 3'b111; else next_state = 3'b001;//Estado comprobar victoria PC
+		3'b111: next_state = 3'b111;//Fin del juego
 		default: next_state = 3'b000;
 	endcase
 
