@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "04/12/2024 15:03:46"
+// DATE "04/13/2024 08:36:28"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -51,30 +51,30 @@ output 	VGA_BKANK_N;
 
 // Design Ports Information
 // rst	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[0]	=>  Location: PIN_J9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[1]	=>  Location: PIN_J10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[2]	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[3]	=>  Location: PIN_G10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[4]	=>  Location: PIN_G11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[5]	=>  Location: PIN_G12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[6]	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_G[7]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[0]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[1]	=>  Location: PIN_C13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[2]	=>  Location: PIN_E13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[3]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[4]	=>  Location: PIN_C12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[5]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[6]	=>  Location: PIN_E12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_R[7]	=>  Location: PIN_F13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[0]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[1]	=>  Location: PIN_G13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[2]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[3]	=>  Location: PIN_F14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[4]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[5]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[6]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// VGA_B[7]	=>  Location: PIN_J14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[0]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[1]	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[2]	=>  Location: PIN_G12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[3]	=>  Location: PIN_G11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[4]	=>  Location: PIN_G10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[5]	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[6]	=>  Location: PIN_J10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_G[7]	=>  Location: PIN_J9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[0]	=>  Location: PIN_F13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[1]	=>  Location: PIN_E12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[2]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[3]	=>  Location: PIN_C12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[4]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[5]	=>  Location: PIN_E13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[6]	=>  Location: PIN_C13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_R[7]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[0]	=>  Location: PIN_J14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[1]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[2]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[3]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[4]	=>  Location: PIN_F14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[5]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[6]	=>  Location: PIN_G13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// VGA_B[7]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // VGA_HS	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // VGA_VS	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // VGA_SYNC_N	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -97,7 +97,7 @@ wire \rst~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOOBUF_X4_Y81_N19
+// Location: IOOBUF_X18_Y81_N59
 cyclonev_io_obuf \VGA_G[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -113,7 +113,7 @@ defparam \VGA_G[0]~output .open_drain_output = "false";
 defparam \VGA_G[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X4_Y81_N2
+// Location: IOOBUF_X18_Y81_N42
 cyclonev_io_obuf \VGA_G[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -129,7 +129,7 @@ defparam \VGA_G[1]~output .open_drain_output = "false";
 defparam \VGA_G[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X20_Y81_N19
+// Location: IOOBUF_X10_Y81_N42
 cyclonev_io_obuf \VGA_G[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -145,7 +145,7 @@ defparam \VGA_G[2]~output .open_drain_output = "false";
 defparam \VGA_G[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X6_Y81_N2
+// Location: IOOBUF_X10_Y81_N59
 cyclonev_io_obuf \VGA_G[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -161,7 +161,7 @@ defparam \VGA_G[3]~output .open_drain_output = "false";
 defparam \VGA_G[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y81_N59
+// Location: IOOBUF_X6_Y81_N2
 cyclonev_io_obuf \VGA_G[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -177,7 +177,7 @@ defparam \VGA_G[4]~output .open_drain_output = "false";
 defparam \VGA_G[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y81_N42
+// Location: IOOBUF_X20_Y81_N19
 cyclonev_io_obuf \VGA_G[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -193,7 +193,7 @@ defparam \VGA_G[5]~output .open_drain_output = "false";
 defparam \VGA_G[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X18_Y81_N42
+// Location: IOOBUF_X4_Y81_N2
 cyclonev_io_obuf \VGA_G[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -209,7 +209,7 @@ defparam \VGA_G[6]~output .open_drain_output = "false";
 defparam \VGA_G[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X18_Y81_N59
+// Location: IOOBUF_X4_Y81_N19
 cyclonev_io_obuf \VGA_G[7]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -225,7 +225,7 @@ defparam \VGA_G[7]~output .open_drain_output = "false";
 defparam \VGA_G[7]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y81_N53
+// Location: IOOBUF_X26_Y81_N42
 cyclonev_io_obuf \VGA_R[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -241,7 +241,7 @@ defparam \VGA_R[0]~output .open_drain_output = "false";
 defparam \VGA_R[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y81_N2
+// Location: IOOBUF_X22_Y81_N2
 cyclonev_io_obuf \VGA_R[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -257,7 +257,7 @@ defparam \VGA_R[1]~output .open_drain_output = "false";
 defparam \VGA_R[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X26_Y81_N59
+// Location: IOOBUF_X22_Y81_N19
 cyclonev_io_obuf \VGA_R[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -273,7 +273,7 @@ defparam \VGA_R[2]~output .open_drain_output = "false";
 defparam \VGA_R[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y81_N19
+// Location: IOOBUF_X36_Y81_N36
 cyclonev_io_obuf \VGA_R[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -289,7 +289,7 @@ defparam \VGA_R[3]~output .open_drain_output = "false";
 defparam \VGA_R[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X36_Y81_N36
+// Location: IOOBUF_X38_Y81_N19
 cyclonev_io_obuf \VGA_R[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -305,7 +305,7 @@ defparam \VGA_R[4]~output .open_drain_output = "false";
 defparam \VGA_R[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X22_Y81_N19
+// Location: IOOBUF_X26_Y81_N59
 cyclonev_io_obuf \VGA_R[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -321,7 +321,7 @@ defparam \VGA_R[5]~output .open_drain_output = "false";
 defparam \VGA_R[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X22_Y81_N2
+// Location: IOOBUF_X38_Y81_N2
 cyclonev_io_obuf \VGA_R[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -337,7 +337,7 @@ defparam \VGA_R[6]~output .open_drain_output = "false";
 defparam \VGA_R[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X26_Y81_N42
+// Location: IOOBUF_X40_Y81_N53
 cyclonev_io_obuf \VGA_R[7]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -353,7 +353,7 @@ defparam \VGA_R[7]~output .open_drain_output = "false";
 defparam \VGA_R[7]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y81_N36
+// Location: IOOBUF_X32_Y81_N19
 cyclonev_io_obuf \VGA_B[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -369,7 +369,7 @@ defparam \VGA_B[0]~output .open_drain_output = "false";
 defparam \VGA_B[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X28_Y81_N19
+// Location: IOOBUF_X40_Y81_N19
 cyclonev_io_obuf \VGA_B[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -385,7 +385,7 @@ defparam \VGA_B[1]~output .open_drain_output = "false";
 defparam \VGA_B[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X20_Y81_N2
+// Location: IOOBUF_X36_Y81_N2
 cyclonev_io_obuf \VGA_B[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -401,7 +401,7 @@ defparam \VGA_B[2]~output .open_drain_output = "false";
 defparam \VGA_B[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X36_Y81_N19
+// Location: IOOBUF_X28_Y81_N2
 cyclonev_io_obuf \VGA_B[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -417,7 +417,7 @@ defparam \VGA_B[3]~output .open_drain_output = "false";
 defparam \VGA_B[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X28_Y81_N2
+// Location: IOOBUF_X36_Y81_N19
 cyclonev_io_obuf \VGA_B[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -433,7 +433,7 @@ defparam \VGA_B[4]~output .open_drain_output = "false";
 defparam \VGA_B[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X36_Y81_N2
+// Location: IOOBUF_X20_Y81_N2
 cyclonev_io_obuf \VGA_B[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -449,7 +449,7 @@ defparam \VGA_B[5]~output .open_drain_output = "false";
 defparam \VGA_B[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y81_N19
+// Location: IOOBUF_X28_Y81_N19
 cyclonev_io_obuf \VGA_B[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -465,7 +465,7 @@ defparam \VGA_B[6]~output .open_drain_output = "false";
 defparam \VGA_B[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X32_Y81_N19
+// Location: IOOBUF_X40_Y81_N36
 cyclonev_io_obuf \VGA_B[7]~output (
 	.i(gnd),
 	.oe(vcc),
