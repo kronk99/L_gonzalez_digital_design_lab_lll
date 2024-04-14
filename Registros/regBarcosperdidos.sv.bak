@@ -1,0 +1,19 @@
+module regBarcos(input logic clk, rst,in,result)
+	reg boatcount <=0;
+	always_ff @(posedge clk or posedge rst)
+    begin
+        if (reset) begin
+            boatcount <= 0; // Reset value
+        end
+        else begin
+				if(boatcount != 5 )begin
+					boatcount <= boatcount + 1; // Increment on FSM trigger
+				end //basicamente solo va actualizar counter value si el valor es distinto 
+				//de 200 , cuando llega a 200 se congela a esperar que la fsm reinicie.
+				//aca le esta diciendo que no sume mas.
+        end
+    end
+    
+    // Output the count value
+    assign result = boatcount;
+endmodule
