@@ -1,1 +1,0 @@
-module registroBarcos(input logic clk, rst,setter,output logic)
