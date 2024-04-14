@@ -1,4 +1,4 @@
-module FSM(input Btn, rst, clk,T,V, VJ, VP,NBarcos, output Timer, Turno, CJug, CPC, Barcos, Casilla);
+module FSM(input Btn, rst, clk,T,V, VJ, VP,NBarcos, output Timer, Turno, output logic CJug[4:0], CPC[4:0], Barcos[2:0], Casilla[4:0]);
 
 logic [2:0] state, next_state; //Necesito 3 bits porque son 6 estados
 
@@ -23,8 +23,10 @@ always_comb
 	endcase
 
 //output logic
-assign rst_timer = (state == 2'b01);// se hace 1 cuando el estado es 2b01, es para
-//resetear el contador de ciclos
+
+assign Timer = (state == 3'b001);// El timer se hace 1 para indicar que se debe iniciar la cuenta de 15 segundos para el turno del jugador
+assign Turno = (state == 3'b001); // Es 1 cuando es el turno del jugador, es 0 cuando es el turno de la PC
+assign 
 assign cont = (state == 2'b01); //este es para decirle al registro que cuente
 
 assign sel_state = (state == 2'b11);//supongo que es el estado de error

@@ -1,27 +1,21 @@
-|FSM
-Btn => next_state.OUTPUTSELECT
-Btn => next_state.OUTPUTSELECT
-Btn => Selector0.IN5
-Btn => next_state.010.DATAB
-Btn => next_state.000.DATAB
-rst => state~3.DATAIN
-clk => state~1.DATAIN
-T => next_state.DATAA
-T => next_state.DATAA
-V => next_state.011.DATAB
-V => next_state.110.DATAB
-V => Selector0.IN2
-V => Selector1.IN2
-VJ => Selector2.IN3
-VJ => Selector1.IN3
-VP => Selector2.IN4
-VP => Selector0.IN3
-NBarcos => ~NO_FANOUT~
-Timer <= <GND>
-Turno <= <GND>
-CJug <= <GND>
-CPC <= <GND>
-Barcos <= <GND>
-Casilla <= <GND>
+|Random_TB
+
+
+|Random_TB|Random:dut
+clk => lfsr_state[0].CLK
+clk => lfsr_state[1].CLK
+clk => lfsr_state[2].CLK
+clk => lfsr_state[3].CLK
+clk => lfsr_state[4].CLK
+enable => lfsr_state[0].ENA
+enable => lfsr_state[1].ENA
+enable => lfsr_state[2].ENA
+enable => lfsr_state[3].ENA
+enable => lfsr_state[4].ENA
+rand_num[0] <= lfsr_state[0].DB_MAX_OUTPUT_PORT_TYPE
+rand_num[1] <= lfsr_state[1].DB_MAX_OUTPUT_PORT_TYPE
+rand_num[2] <= lfsr_state[2].DB_MAX_OUTPUT_PORT_TYPE
+rand_num[3] <= lfsr_state[3].DB_MAX_OUTPUT_PORT_TYPE
+rand_num[4] <= lfsr_state[4].DB_MAX_OUTPUT_PORT_TYPE
 
 

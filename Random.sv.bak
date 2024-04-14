@@ -1,0 +1,19 @@
+module Random(
+    input logic clk, //Reloj
+    input logic enable, //Entrada de habilitacion
+    output logic [4:0] rand_num //Salida de la casilla
+);
+
+
+function automatic int generate_random;
+    generate_random = $urandom_range(1, 26); // Numero de 1 a 25 
+endfunction
+
+// Cada ciclo de reloj
+always_ff @(posedge clk) begin
+    if (enable) begin
+        rand_num <= generate_random; // Si hay senal de habilitacion, se genera
+    end
+end
+
+endmodule
