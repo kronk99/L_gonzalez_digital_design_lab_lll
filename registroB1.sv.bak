@@ -1,0 +1,21 @@
+//Registra donde esta guardado el barco
+module registroB1(input clk, rst, enable, input logic casilla[4:0], output logic barco[4:0]);
+
+logic [4:0] temporal; //Para trabajar de manera interna con el arreglo
+
+always @(posedge clk) begin
+		if(rst) begin //El reset coloca la casilla en 0 (esto indica que el barco no esta colocado/esta muerto)
+			for (int i = 0; i < 5; i++) begin
+					casilla[i] <=0;
+					temporal[i] <=0;
+			 end
+		end
+		
+		else if (enable) begin //Si esta el enable, significa que se va a asignar un nuevo valor al registro.
+			casilla = temporal;
+		end
+	end
+	assign barco = temporal; //La salida se asigna al valor de la casilla
+	
+	
+endmodule

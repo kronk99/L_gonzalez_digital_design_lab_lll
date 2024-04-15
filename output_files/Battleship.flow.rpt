@@ -1,5 +1,5 @@
 Flow report for Battleship
-Fri Apr 12 10:49:38 2024
+Mon Apr 15 00:05:03 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Fri Apr 12 10:49:38 2024       ;
+; Flow Status                 ; Successful - Mon Apr 15 00:05:03 2024       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; Battleship                                  ;
-; Top-level Entity Name       ; Random_TB                                   ;
+; Top-level Entity Name       ; registroBarcos_tb                           ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -63,37 +63,45 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/12/2024 10:49:31 ;
+; Start date & time ; 04/15/2024 00:04:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Battleship          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 5397597525652.171294057115348          ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Random_TB      ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Random_TB                              ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; Random_TB.sv                           ; --            ; --          ; Random_TB      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Random_TB                              ; --            ; --          ; Random_TB      ;
-; EDA_TEST_BENCH_NAME                  ; Random_TB                              ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Random_TB   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Random_TB   ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Random_TB   ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; Random_TB                              ; Battleship    ; --          ; --             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                      ;
++--------------------------------------+----------------------------------------+---------------+-------------------+-------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name       ; Section Id        ;
++--------------------------------------+----------------------------------------+---------------+-------------------+-------------------+
+; COMPILER_SIGNATURE_ID                ; 5397597525652.171316109725224          ; --            ; --                ; --                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; regCiclos_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; registroBarcos_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; Random_TB         ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; registroBarcos_tb                      ; --            ; --                ; eda_simulation    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --                ; eda_simulation    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --                ; --                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --                ; eda_simulation    ;
+; EDA_TEST_BENCH_FILE                  ; regCiclos_tb.sv                        ; --            ; --                ; regCiclos_tb      ;
+; EDA_TEST_BENCH_FILE                  ; registroBarcos_tb.sv                   ; --            ; --                ; registroBarcos_tb ;
+; EDA_TEST_BENCH_FILE                  ; Random_TB.sv                           ; --            ; --                ; Random_TB         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; regCiclos_tb                           ; --            ; --                ; regCiclos_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; registroBarcos_tb                      ; --            ; --                ; registroBarcos_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Random_TB                              ; --            ; --                ; Random_TB         ;
+; EDA_TEST_BENCH_NAME                  ; Random_TB                              ; --            ; --                ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; regCiclos_tb                           ; --            ; --                ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; registroBarcos_tb                      ; --            ; --                ; eda_simulation    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                ; eda_simulation    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                ; --                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                ; --                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; registroBarcos_tb ; Top               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; registroBarcos_tb ; Top               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; registroBarcos_tb ; Top               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --                ; --                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --                ; --                ;
+; TOP_LEVEL_ENTITY                     ; registroBarcos_tb                      ; Battleship    ; --                ; --                ;
++--------------------------------------+----------------------------------------+---------------+-------------------+-------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -101,8 +109,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4769 MB             ; 00:00:04                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:04                           ;
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4773 MB             ; 00:00:04                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:04                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

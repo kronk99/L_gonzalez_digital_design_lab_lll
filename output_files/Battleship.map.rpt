@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Battleship
-Fri Apr 12 10:49:38 2024
+Mon Apr 15 00:05:03 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,11 +9,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |Random_TB
-  5. Parameter Settings for User Entity Instance: Random:dut
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |registroBarcos_tb
+  5. Parameter Settings for User Entity Instance: registroBarcos:dut
   6. Analysis & Elaboration Settings
-  7. Port Connectivity Checks: "Random:dut"
+  7. Port Connectivity Checks: "registroBarcos:dut"
   8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -40,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Apr 12 10:49:38 2024       ;
+; Analysis & Elaboration Status ; Successful - Mon Apr 15 00:05:03 2024       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Battleship                                  ;
-; Top-level Entity Name         ; Random_TB                                   ;
+; Top-level Entity Name         ; registroBarcos_tb                           ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -71,24 +72,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Random_TB ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; CLK_PERIOD     ; 10    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |registroBarcos_tb ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; numBarcos      ; 5     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Random:dut ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; LFSR_WIDTH     ; 5     ; Signed Integer                 ;
-; TAP_POSITION   ; 2     ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registroBarcos:dut ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; numBarcos      ; 5     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -98,7 +98,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; Random_TB          ; Battleship         ;
+; Top-level entity name                                                           ; registroBarcos_tb  ; Battleship         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -179,13 +179,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Random:dut"                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; rand_num ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registroBarcos:dut"                                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; rst    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; setter ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barcos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -194,7 +196,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Apr 12 10:49:31 2024
+    Info: Processing started: Mon Apr 15 00:04:57 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Battleship -c Battleship --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -206,19 +208,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file random.
     Info (12023): Found entity 1: Random File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file random_tb.sv
     Info (12023): Found entity 1: Random_TB File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(27): created implicit net for "rst_timer" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file regcasillas.sv
+    Info (12023): Found entity 1: regCasillas File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file comparadorsegundos.sv
+    Info (12023): Found entity 1: comparadorSegundos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/comparadorSegundos.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file regbarcosperdidos.sv
+    Info (12023): Found entity 1: regBarcosperdidos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regciclos.sv
+    Info (12023): Found entity 1: regCiclos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos.sv
+    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file regciclos_tb.sv
+    Info (12023): Found entity 1: regCiclos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos_tb.sv
+    Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrob1.sv
+    Info (12023): Found entity 1: registroB1 File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
 Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(29): created implicit net for "cont" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 29
 Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(31): created implicit net for "sel_state" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 31
-Info (12127): Elaborating entity "Random_TB" for the top level hierarchy
-Warning (10755): Verilog HDL warning at Random_TB.sv(21): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 21
-Warning (10175): Verilog HDL warning at Random_TB.sv(42): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 42
-Info (12128): Elaborating entity "Random" for hierarchy "Random:dut" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 18
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 9
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Fri Apr 12 10:49:38 2024
-    Info: Elapsed time: 00:00:07
+Info (12127): Elaborating entity "registroBarcos_tb" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at registroBarcos_tb.sv(12): object "barcos" assigned a value but never read File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 12
+Warning (10755): Verilog HDL warning at registroBarcos_tb.sv(23): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at registroBarcos_tb.sv(39): truncated value with size 32 to match size of target (1) File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 39
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(56): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 56
+Warning (10855): Verilog HDL warning at registroBarcos_tb.sv(34): initial value for variable barcos should be constant File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 34
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(63): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 63
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(65): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 65
+Info (12128): Elaborating entity "registroBarcos" for hierarchy "registroBarcos:dut" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 20
+Info (144001): Generated suppressed messages file C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4773 megabytes
+    Info: Processing ended: Mon Apr 15 00:05:03 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg.
 
 

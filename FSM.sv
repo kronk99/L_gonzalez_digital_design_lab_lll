@@ -26,7 +26,6 @@ always_comb
 
 assign Timer = (state == 3'b001);// El timer se hace 1 para indicar que se debe iniciar la cuenta de 15 segundos para el turno del jugador
 assign Turno = (state == 3'b001); // Es 1 cuando es el turno del jugador, es 0 cuando es el turno de la PC
-assign 
 assign cont = (state == 2'b01); //este es para decirle al registro que cuente
 
 assign sel_state = (state == 2'b11);//supongo que es el estado de error

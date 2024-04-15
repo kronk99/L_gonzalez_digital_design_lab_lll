@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at registroB1.sv(6): always construct contains both blocking and non-blocking assignments File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 6

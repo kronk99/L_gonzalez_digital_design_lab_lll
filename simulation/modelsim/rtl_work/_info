@@ -9,57 +9,57 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/simulation/modelsim
-vRandom
+vregistroBarcos
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1712940585
+Z2 !s110 1713157009
 !i10b 1
-!s100 j38eWS=JL37ZUN?;?>k4e0
+!s100 @fEBGLOBdmiX[fFamfGAo2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I^_Na?>gX<MOmQeAeNIOMK1
+IY0O<JebWz9QRzi`=dZli_0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1712940569
-8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv
-FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv
+w1713156360
+8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv
 !i122 0
-L0 2 25
+L0 3 32
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1712940585.000000
-!s107 C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll|C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv|
+Z6 !s108 1713157009.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll|C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll
 Z9 tCvgOpt 0
-n@random
-vRandom_TB
+nregistro@barcos
+vregistroBarcos_tb
 R1
 R2
 !i10b 1
-!s100 IN9HlDKN0m:kSi8WeOGC?0
+!s100 SGCEf455L2:e8VP@:DP`c3
 R3
-I8E=X5dJCi0GTZB]MeR71<2
+I1f63^0>^ZHgGj;@eUgacY1
 R4
 S1
 R0
-w1712940375
-8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv
-FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv
+w1713156698
+8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv
 !i122 2
-L0 3 46
+L0 1 71
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll|C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll|C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv|
 !i113 1
 R7
 R8
 R9
-n@random_@t@b
+nregistro@barcos_tb
