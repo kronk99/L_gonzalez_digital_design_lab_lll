@@ -74,11 +74,22 @@ set_global_assignment -name SYSTEMVERILOG_FILE registroBarcos_tb.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME registroBarcos_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id registroBarcos_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME registroBarcos_tb -section_id registroBarcos_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE registroBarcos_tb.sv -section_id registroBarcos_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Random_TB.sv -section_id Random_TB
-set_global_assignment -name EDA_TEST_BENCH_FILE regCiclos_tb.sv -section_id regCiclos_tb
+set_global_assignment -name SYSTEMVERILOG_FILE registroB1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registroB1_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME registroB1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id registroB1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME registroB1_tb -section_id registroB1_tb
+set_global_assignment -name SYSTEMVERILOG_FILE registroB.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registroB_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME registroB_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id registroB_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME registroB_tb -section_id registroB_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE registroB1.sv
+set_global_assignment -name EDA_TEST_BENCH_FILE Random_TB.sv -section_id Random_TB
+set_global_assignment -name EDA_TEST_BENCH_FILE regCiclos_tb.sv -section_id regCiclos_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE registroBarcos_tb.sv -section_id registroBarcos_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE registroB1_tb.sv -section_id registroB1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE registroB_tb.sv -section_id registroB_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

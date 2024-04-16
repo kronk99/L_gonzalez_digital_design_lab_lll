@@ -12,39 +12,39 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:56:49 on Apr 14,2024
+# Start time: 10:47:21 on Apr 16,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv 
 # -- Compiling module registroBarcos
 # 
 # Top level modules:
 # 	registroBarcos
-# End time: 22:56:49 on Apr 14,2024, Elapsed time: 0:00:00
+# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:56:49 on Apr 14,2024
+# Start time: 10:47:21 on Apr 16,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv 
 # -- Compiling module registroBarcos_tb
 # 
 # Top level modules:
 # 	registroBarcos_tb
-# End time: 22:56:49 on Apr 14,2024, Elapsed time: 0:00:00
+# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:56:49 on Apr 14,2024
+# Start time: 10:47:21 on Apr 16,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv 
 # -- Compiling module registroBarcos_tb
 # 
 # Top level modules:
 # 	registroBarcos_tb
-# End time: 22:56:49 on Apr 14,2024, Elapsed time: 0:00:00
+# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  registroBarcos_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" registroBarcos_tb 
-# Start time: 22:56:49 on Apr 14,2024
+# Start time: 10:47:21 on Apr 16,2024
 # Loading sv_std.std
 # Loading work.registroBarcos_tb
 # Loading work.registroBarcos
@@ -56,86 +56,70 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Time = 5
-# Barco[0]: x x x x x x 
-# Barco[1]: x x x x x x 
-# Barco[2]: x x x x x x 
-# Barco[3]: x x x x x x 
-# Barco[4]: x x x x x x 
+# Barco[0]: x x x x x 
+# Barco[1]: x x x x x 
+# Barco[2]: x x x x x 
+# Barco[3]: x x x x x 
+# Barco[4]: x x x x x 
 # Time = 15
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 0 0 0 0 x 
-# Barco[2]: 0 0 0 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 0 0 0 0 0 
+# Barco[2]: 0 0 0 0 0 
+# Barco[3]: 0 0 0 0 0 
+# Barco[4]: 0 0 0 0 0 
 # Time = 25
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 0 0 0 0 0 
+# Barco[2]: 0 0 0 0 0 
+# Barco[3]: 0 0 0 0 0 
+# Barco[4]: 0 0 0 0 0 
 # Time = 35
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 1 0 0 0 0 
+# Barco[1]: 1 1 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 1 1 1 1 
 # Time = 45
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 1 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 1 1 1 1 
 # Time = 55
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 1 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 1 1 1 1 
 # Time = 65
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 1 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 0 1 1 1 
 # Time = 75
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 1 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 0 1 1 1 
 # Time = 85
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 0 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 0 1 1 1 
 # Time = 95
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
-# Time = 105
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
-# Time = 115
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
-# Time = 125
-# Barco[0]: 0 0 0 0 0 x 
-# Barco[1]: 0 1 0 0 0 x 
-# Barco[2]: 0 0 1 0 0 x 
-# Barco[3]: 0 0 0 0 0 x 
-# Barco[4]: 0 0 0 0 0 x 
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv(56)
-#    Time: 130 ps  Iteration: 0  Instance: /registroBarcos_tb
+# Barco[0]: 0 0 0 0 0 
+# Barco[1]: 1 0 0 0 0 
+# Barco[2]: 1 1 1 0 0 
+# Barco[3]: 1 1 1 1 0 
+# Barco[4]: 1 0 1 1 1 
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv(94)
+#    Time: 100 ps  Iteration: 0  Instance: /registroBarcos_tb
 # 1
-# Break in Module registroBarcos_tb at C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv line 56
-# End time: 00:03:58 on Apr 15,2024, Elapsed time: 1:07:09
+# Break in Module registroBarcos_tb at C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv line 94
+add wave -position insertpoint  \
+sim:/registroBarcos_tb/barcosout
+# End time: 10:48:00 on Apr 16,2024, Elapsed time: 0:00:39
 # Errors: 0, Warnings: 0

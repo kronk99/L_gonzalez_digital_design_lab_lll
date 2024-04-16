@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/simulation/modelsim
 vregistroBarcos
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1713157009
+Z2 !s110 1713286041
 !i10b 1
-!s100 @fEBGLOBdmiX[fFamfGAo2
+!s100 :G9>PBi=b?[0dih@DAB7F2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IY0O<JebWz9QRzi`=dZli_0
+IE4H7bfM7OonM92Uj;nKK>1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1713156360
+w1713285749
 8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv
 FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv
 !i122 0
-L0 3 32
+L0 26 69
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1713157009.000000
+Z6 !s108 1713286041.000000
 !s107 C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll|C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv|
 !i113 1
@@ -40,17 +40,17 @@ vregistroBarcos_tb
 R1
 R2
 !i10b 1
-!s100 SGCEf455L2:e8VP@:DP`c3
+!s100 _fgTn0<U_lg2BgF[7Gnj23
 R3
-I1f63^0>^ZHgGj;@eUgacY1
+IW8K5S:5BK[2;Y5EQj55Kf2
 R4
 S1
 R0
-w1713156698
+w1713286025
 8C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv
 FC:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv
 !i122 2
-L0 1 71
+L0 1 109
 R5
 r1
 !s85 0

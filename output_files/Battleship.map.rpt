@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Battleship
-Mon Apr 15 00:05:03 2024
+Tue Apr 16 10:47:15 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Apr 15 00:05:03 2024       ;
+; Analysis & Elaboration Status ; Successful - Tue Apr 16 10:47:15 2024       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Battleship                                  ;
 ; Top-level Entity Name         ; registroBarcos_tb                           ;
@@ -179,15 +179,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "registroBarcos:dut"                                                                   ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; rst    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; setter ; Input  ; Info     ; Stuck at GND                                                                        ;
-; barcos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registroBarcos:dut"                                                                          ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; rst           ; Input  ; Info     ; Stuck at GND                                                                        ;
+; enable        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; setter        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; casilla[4..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; casilla[2]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; casilla[1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; casilla[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco1[4..2]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco1[1]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco1[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco2[2..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco2[4]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco2[3]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco3[3..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco3[4]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco4[1..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco4[4]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco4[3]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco4[2]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco5[4..3]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barco5[2..1]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; barco5[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco1[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco1[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco2[2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco2[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco2[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco3[1..0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco3[2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco4[1..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco4[2]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco5[2]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; tbarco5[1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tbarco5[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; barcosout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -196,7 +228,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 15 00:04:57 2024
+    Info: Processing started: Tue Apr 16 10:47:08 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Battleship -c Battleship --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -217,30 +249,35 @@ Info (12021): Found 1 design units, including 1 entities, in source file regbarc
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos.sv
     Info (12023): Found entity 1: regCiclos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos.sv
-    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 3
+    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos_tb.sv
     Info (12023): Found entity 1: regCiclos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos_tb.sv
     Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrob1.sv
     Info (12023): Found entity 1: registroB1 File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at registroB1_tb.sv(21): ignored dangling comma in List of Port Connections File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file registrob1_tb.sv
+    Info (12023): Found entity 1: registroB1_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrob.sv
+    Info (12023): Found entity 1: registroB File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file registrob_tb.sv
+    Info (12023): Found entity 1: registroB_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB_tb.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(29): created implicit net for "cont" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 29
 Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(31): created implicit net for "sel_state" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 31
 Info (12127): Elaborating entity "registroBarcos_tb" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at registroBarcos_tb.sv(12): object "barcos" assigned a value but never read File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 12
-Warning (10755): Verilog HDL warning at registroBarcos_tb.sv(23): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at registroBarcos_tb.sv(39): truncated value with size 32 to match size of target (1) File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 39
-Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(56): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 56
-Warning (10855): Verilog HDL warning at registroBarcos_tb.sv(34): initial value for variable barcos should be constant File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 34
-Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(63): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 63
-Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(65): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 65
-Info (12128): Elaborating entity "registroBarcos" for hierarchy "registroBarcos:dut" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 20
+Warning (10036): Verilog HDL or VHDL warning at registroBarcos_tb.sv(16): object "barcosout" assigned a value but never read File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 16
+Warning (10755): Verilog HDL warning at registroBarcos_tb.sv(39): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 39
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(94): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 94
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(101): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 101
+Warning (10175): Verilog HDL warning at registroBarcos_tb.sv(103): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 103
+Info (12128): Elaborating entity "registroBarcos" for hierarchy "registroBarcos:dut" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 36
 Info (144001): Generated suppressed messages file C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Mon Apr 15 00:05:03 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Tue Apr 16 10:47:15 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +--------------------------------------------+
