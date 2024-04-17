@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.386
+TNS   : -3.386
+
+Type  : Slow 1100mV 85C Model Setup 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -2.589
+TNS   : -25.851
+
+Type  : Slow 1100mV 85C Model Setup 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -2.146
+TNS   : -21.438
+
+Type  : Slow 1100mV 85C Model Hold 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.905
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 1.098
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.865
+TNS   : -1.487
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -0.394
+TNS   : -5.376
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -0.394
+TNS   : -5.270
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.356
+TNS   : -3.356
+
+Type  : Slow 1100mV 0C Model Setup 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -2.546
+TNS   : -25.419
+
+Type  : Slow 1100mV 0C Model Setup 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -2.211
+TNS   : -20.661
+
+Type  : Slow 1100mV 0C Model Hold 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.881
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 1.217
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.863
+TNS   : -1.516
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -0.394
+TNS   : -5.398
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -0.394
+TNS   : -5.220
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.635
+TNS   : -2.635
+
+Type  : Fast 1100mV 85C Model Setup 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -1.196
+TNS   : -11.945
+
+Type  : Fast 1100mV 85C Model Setup 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -0.911
+TNS   : -9.102
+
+Type  : Fast 1100mV 85C Model Hold 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Fast 1100mV 85C Model Hold 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 1.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.750
+TNS   : -1.149
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.072
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.291
+TNS   : -2.291
+
+Type  : Fast 1100mV 0C Model Setup 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -1.054
+TNS   : -10.525
+
+Type  : Fast 1100mV 0C Model Setup 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : -0.788
+TNS   : -7.872
+
+Type  : Fast 1100mV 0C Model Hold 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Fast 1100mV 0C Model Hold 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 1.044
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.722
+TNS   : -1.103
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock25mh:clock_iml|contador_parametrizable:divisor_clock|contador[0]'
+Slack : 0.134
+TNS   : 0.000
+
+------------------------------------------------------------
