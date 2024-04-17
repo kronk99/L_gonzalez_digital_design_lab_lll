@@ -1,3 +1,0 @@
-module barcos_escogidos(input logic clk, rst,input logic[2:0] num_barco ,
-input logic [4:0] casilla_escogida,);
-endmodule
