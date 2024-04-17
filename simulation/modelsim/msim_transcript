@@ -10,44 +10,44 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:47:21 on Apr 16,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv 
-# -- Compiling module registroBarcos
+# Start time: 18:17:24 on Apr 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv 
+# -- Compiling module regCasillas
 # 
 # Top level modules:
-# 	registroBarcos
-# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
+# 	regCasillas
+# End time: 18:17:24 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:47:21 on Apr 16,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv 
-# -- Compiling module registroBarcos_tb
+# Start time: 18:17:24 on Apr 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv 
+# -- Compiling module regCasillas_tb
 # 
 # Top level modules:
-# 	registroBarcos_tb
-# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
+# 	regCasillas_tb
+# End time: 18:17:24 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:47:21 on Apr 16,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv 
-# -- Compiling module registroBarcos_tb
+# Start time: 18:17:24 on Apr 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv 
+# -- Compiling module regCasillas_tb
 # 
 # Top level modules:
-# 	registroBarcos_tb
-# End time: 10:47:21 on Apr 16,2024, Elapsed time: 0:00:00
+# 	regCasillas_tb
+# End time: 18:17:24 on Apr 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  registroBarcos_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" registroBarcos_tb 
-# Start time: 10:47:21 on Apr 16,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  regCasillas_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" regCasillas_tb 
+# Start time: 18:17:24 on Apr 16,2024
 # Loading sv_std.std
-# Loading work.registroBarcos_tb
-# Loading work.registroBarcos
+# Loading work.regCasillas_tb
+# Loading work.regCasillas
 # 
 # add wave *
 # view structure
@@ -55,71 +55,15 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Time = 5
-# Barco[0]: x x x x x 
-# Barco[1]: x x x x x 
-# Barco[2]: x x x x x 
-# Barco[3]: x x x x x 
-# Barco[4]: x x x x x 
-# Time = 15
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 0 0 0 0 0 
-# Barco[2]: 0 0 0 0 0 
-# Barco[3]: 0 0 0 0 0 
-# Barco[4]: 0 0 0 0 0 
-# Time = 25
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 0 0 0 0 0 
-# Barco[2]: 0 0 0 0 0 
-# Barco[3]: 0 0 0 0 0 
-# Barco[4]: 0 0 0 0 0 
-# Time = 35
-# Barco[0]: 1 0 0 0 0 
-# Barco[1]: 1 1 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 1 1 1 1 
-# Time = 45
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 1 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 1 1 1 1 
-# Time = 55
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 1 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 1 1 1 1 
-# Time = 65
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 1 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 0 1 1 1 
-# Time = 75
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 1 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 0 1 1 1 
-# Time = 85
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 0 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 0 1 1 1 
-# Time = 95
-# Barco[0]: 0 0 0 0 0 
-# Barco[1]: 1 0 0 0 0 
-# Barco[2]: 1 1 1 0 0 
-# Barco[3]: 1 1 1 1 0 
-# Barco[4]: 1 0 1 1 1 
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv(94)
-#    Time: 100 ps  Iteration: 0  Instance: /registroBarcos_tb
+# Time = 5, Valid = 0
+# Time = 15, Valid = 0
+# Time = 25, Valid = 0
+# Time = 35, Valid = 0
+# Time = 45, Valid = 0
+# Time = 55, Valid = 0
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv(64)
+#    Time: 60 ps  Iteration: 0  Instance: /regCasillas_tb
 # 1
-# Break in Module registroBarcos_tb at C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv line 94
-add wave -position insertpoint  \
-sim:/registroBarcos_tb/barcosout
-# End time: 10:48:00 on Apr 16,2024, Elapsed time: 0:00:39
+# Break in Module regCasillas_tb at C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv line 64
+# End time: 18:18:11 on Apr 16,2024, Elapsed time: 0:00:47
 # Errors: 0, Warnings: 0
