@@ -1,0 +1,15 @@
+module selector(input logic enable,button_select ,button_next , output logic next , select);
+//consultar si esto ocupa un clock o no
+	always_ff @(posedge clk) begin
+		if(enable)begin
+			if(button_next or button_select)begin
+				assign next = button_next;
+				assign select = button_select;
+			end
+			else begin
+				assign next = 0;
+				assign select = 0;
+			end
+		end
+   end	
+endmodule
