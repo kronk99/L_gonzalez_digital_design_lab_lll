@@ -2,8 +2,7 @@ module regCasillas_tb;
 
     // Inputs
     logic clk;
-    logic fila;
-    logic columna;
+    logic [4:0] in;
     logic enable;
     logic reset;
 
@@ -13,8 +12,7 @@ module regCasillas_tb;
     // Instantiate the module
     regCasillas dut (
         .clk(clk),
-        .fila(fila),
-        .columna(columna),
+		  .in(in),
         .enable(enable),
         .reset(reset),
         .valid(valid)
@@ -26,8 +24,7 @@ module regCasillas_tb;
     // Reset generation
     initial begin
         clk = 0;
-        fila = 0;
-        columna = 0;
+		  in = 0;
         enable = 0;
         reset = 0;
     end
@@ -35,29 +32,28 @@ module regCasillas_tb;
     // Test cases
     initial begin
         // Wait for some time
-        #20;
+		  reset = 1;
+        #10;
 
         // Enable the module and interact with cells
+		  reset = 0;
+		  #10
         enable = 1;
 
         // Interact with cell at row 2, column 3
-        fila = 2;
-        columna = 3;
+        in = 10;
         #10;
 
         // Interact with cell at row 0, column 0
-        fila = 0;
-        columna = 0;
+        in = 25;
         #10;
 
         // Interact with cell at row 4, column 2
-        fila = 4;
-        columna = 2;
+        in = 22;
         #10;
 
         // Interact with cell at row 3, column 3
-        fila = 2;
-        columna = 3;
+        in = 25;
         #10;
 
         // Finish simulation

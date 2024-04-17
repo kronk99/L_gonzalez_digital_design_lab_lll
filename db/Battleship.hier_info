@@ -1,24 +1,46 @@
-|regCasillas_tb
+|RandomGen_tb
 
 
-|regCasillas_tb|regCasillas:dut
-clk => matriz[0][0].CLK
-clk => matriz[0][1].CLK
-clk => matriz[1][0].CLK
-clk => matriz[1][1].CLK
-clk => casilla.CLK
-fila => Decoder1.IN0
-columna => Decoder0.IN0
-enable => casilla.OUTPUTSELECT
-enable => matriz[1][1].ENA
-enable => matriz[0][0].ENA
-enable => matriz[1][0].ENA
-enable => matriz[0][1].ENA
-reset => matriz[0][0].ACLR
-reset => matriz[0][1].ACLR
-reset => matriz[1][0].ACLR
-reset => matriz[1][1].ACLR
-reset => casilla.ENA
-valid <= casilla.DB_MAX_OUTPUT_PORT_TYPE
+|RandomGen_tb|RandomGen:randomGen_inst
+clk => rand_out[0]~reg0.CLK
+clk => rand_out[1]~reg0.CLK
+clk => rand_out[2]~reg0.CLK
+clk => rand_out[3]~reg0.CLK
+clk => rand_out[4]~reg0.CLK
+clk => rand_out[5]~reg0.CLK
+clk => rand_out[6]~reg0.CLK
+clk => rand_out[7]~reg0.CLK
+clk => lfsr[0].CLK
+clk => lfsr[1].CLK
+clk => lfsr[2].CLK
+clk => lfsr[3].CLK
+clk => lfsr[4].CLK
+clk => lfsr[5].CLK
+clk => lfsr[6].CLK
+clk => lfsr[7].CLK
+rst_n => lfsr[0].ALOAD
+rst_n => lfsr[1].ALOAD
+rst_n => lfsr[2].ALOAD
+rst_n => lfsr[3].ALOAD
+rst_n => lfsr[4].ALOAD
+rst_n => lfsr[5].ALOAD
+rst_n => lfsr[6].ALOAD
+rst_n => lfsr[7].ALOAD
+seed[0] => lfsr[0].ADATA
+seed[1] => lfsr[1].ADATA
+seed[2] => lfsr[2].ADATA
+seed[3] => lfsr[3].ADATA
+seed[4] => lfsr[4].ADATA
+seed[5] => lfsr[5].ADATA
+seed[6] => lfsr[6].ADATA
+seed[7] => lfsr[7].ADATA
+rand_out[0] <= rand_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[1] <= rand_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[2] <= rand_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[3] <= rand_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[4] <= rand_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[5] <= rand_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[6] <= rand_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rand_out[7] <= rand_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
