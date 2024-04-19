@@ -1,46 +1,34 @@
-|RandomGen_tb
+|FSM_tb
 
 
-|RandomGen_tb|RandomGen:randomGen_inst
-clk => rand_out[0]~reg0.CLK
-clk => rand_out[1]~reg0.CLK
-clk => rand_out[2]~reg0.CLK
-clk => rand_out[3]~reg0.CLK
-clk => rand_out[4]~reg0.CLK
-clk => rand_out[5]~reg0.CLK
-clk => rand_out[6]~reg0.CLK
-clk => rand_out[7]~reg0.CLK
-clk => lfsr[0].CLK
-clk => lfsr[1].CLK
-clk => lfsr[2].CLK
-clk => lfsr[3].CLK
-clk => lfsr[4].CLK
-clk => lfsr[5].CLK
-clk => lfsr[6].CLK
-clk => lfsr[7].CLK
-rst_n => lfsr[0].ALOAD
-rst_n => lfsr[1].ALOAD
-rst_n => lfsr[2].ALOAD
-rst_n => lfsr[3].ALOAD
-rst_n => lfsr[4].ALOAD
-rst_n => lfsr[5].ALOAD
-rst_n => lfsr[6].ALOAD
-rst_n => lfsr[7].ALOAD
-seed[0] => lfsr[0].ADATA
-seed[1] => lfsr[1].ADATA
-seed[2] => lfsr[2].ADATA
-seed[3] => lfsr[3].ADATA
-seed[4] => lfsr[4].ADATA
-seed[5] => lfsr[5].ADATA
-seed[6] => lfsr[6].ADATA
-seed[7] => lfsr[7].ADATA
-rand_out[0] <= rand_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[1] <= rand_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[2] <= rand_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[3] <= rand_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[4] <= rand_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[5] <= rand_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[6] <= rand_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rand_out[7] <= rand_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|FSM_tb|FSM:uut
+Btn => next_state.OUTPUTSELECT
+Btn => next_state.OUTPUTSELECT
+Btn => next_state.1000.DATAB
+Btn => next_state.0010.DATAB
+Btn => next_state.0000.DATAB
+rst => state~3.DATAIN
+clk => state~1.DATAIN
+T => next_state.DATAA
+T => next_state.DATAA
+V => next_state.0011.DATAB
+V => next_state.0110.DATAB
+V => Selector0.IN3
+V => Selector1.IN2
+VJ => Selector2.IN3
+VJ => Selector1.IN3
+VP => Selector2.IN4
+VP => Selector0.IN4
+RBarcos => ~NO_FANOUT~
+NBarcos[0] => ~NO_FANOUT~
+NBarcos[1] => ~NO_FANOUT~
+NBarcos[2] => ~NO_FANOUT~
+Timer <= Timer.DB_MAX_OUTPUT_PORT_TYPE
+Turno <= Turno.DB_MAX_OUTPUT_PORT_TYPE
+TurnoPC <= TurnoPC.DB_MAX_OUTPUT_PORT_TYPE
+SBarcos <= SBarcos.DB_MAX_OUTPUT_PORT_TYPE
+CBarcos <= CBarcos.DB_MAX_OUTPUT_PORT_TYPE
+CVictoria <= CVictoria.DB_MAX_OUTPUT_PORT_TYPE
+CDerrota <= CDerrota.DB_MAX_OUTPUT_PORT_TYPE
 
 

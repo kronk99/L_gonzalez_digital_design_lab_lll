@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Battleship
-Wed Apr 17 11:37:45 2024
+Thu Apr 18 23:55:35 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "RandomGen:randomGen_inst"
+  5. Port Connectivity Checks: "FSM:uut"
   6. Analysis & Elaboration Messages
   7. Analysis & Elaboration Suppressed Messages
 
@@ -39,10 +39,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Apr 17 11:37:45 2024       ;
+; Analysis & Elaboration Status ; Successful - Thu Apr 18 23:55:35 2024       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Battleship                                  ;
-; Top-level Entity Name         ; RandomGen_tb                                ;
+; Top-level Entity Name         ; FSM_tb                                      ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; RandomGen_tb       ; Battleship         ;
+; Top-level entity name                                                           ; FSM_tb             ; Battleship         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -157,15 +157,19 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "RandomGen:randomGen_inst"                                                               ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; rst_n    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; seed     ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; rand_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FSM:uut"                                                                                 ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Timer     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Turno     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; TurnoPC   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; SBarcos   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; CBarcos   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; CVictoria ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; CDerrota  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -174,67 +178,68 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Apr 17 11:37:37 2024
+    Info: Processing started: Thu Apr 18 23:55:28 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Battleship -c Battleship --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file battleship.sv
-    Info (12023): Found entity 1: Battleship File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 3
+    Info (12023): Found entity 1: Battleship File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file random.sv
-    Info (12023): Found entity 1: Random File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv Line: 2
+    Info (12023): Found entity 1: Random File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file random_tb.sv
-    Info (12023): Found entity 1: Random_TB File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 3
+    Info (12023): Found entity 1: Random_TB File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file regcasillas.sv
-    Info (12023): Found entity 1: regCasillas File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv Line: 5
+    Info (12023): Found entity 1: regCasillas File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file comparadorsegundos.sv
-    Info (12023): Found entity 1: comparadorSegundos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/comparadorSegundos.sv Line: 3
+    Info (12023): Found entity 1: comparadorSegundos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/comparadorSegundos.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file regbarcosperdidos.sv
-    Info (12023): Found entity 1: regBarcosperdidos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos.sv Line: 1
+    Info (12023): Found entity 1: regBarcosperdidos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos.sv
-    Info (12023): Found entity 1: regCiclos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
+    Info (12023): Found entity 1: regCiclos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos.sv
-    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 26
+    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos_tb.sv
-    Info (12023): Found entity 1: regCiclos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
+    Info (12023): Found entity 1: regCiclos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos_tb.sv
-    Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
+    Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrob1.sv
-    Info (12023): Found entity 1: registroB1 File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at registroB1_tb.sv(21): ignored dangling comma in List of Port Connections File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 21
+    Info (12023): Found entity 1: registroB1 File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at registroB1_tb.sv(21): ignored dangling comma in List of Port Connections File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file registrob1_tb.sv
-    Info (12023): Found entity 1: registroB1_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 1
+    Info (12023): Found entity 1: registroB1_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrob.sv
-    Info (12023): Found entity 1: registroB File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB.sv Line: 4
+    Info (12023): Found entity 1: registroB File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file registrob_tb.sv
-    Info (12023): Found entity 1: registroB_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB_tb.sv Line: 1
+    Info (12023): Found entity 1: registroB_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regbarcosperdidos_tb.sv
-    Info (12023): Found entity 1: regBarcosperdidos_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos_tb.sv Line: 1
+    Info (12023): Found entity 1: regBarcosperdidos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regcasillas_tb.sv
-    Info (12023): Found entity 1: regCasillas_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv Line: 1
+    Info (12023): Found entity 1: regCasillas_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file randomgen.sv
-    Info (12023): Found entity 1: RandomGen File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv Line: 1
+    Info (12023): Found entity 1: RandomGen File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file randomgen_tb.sv
-    Info (12023): Found entity 1: RandomGen_tb File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(29): created implicit net for "cont" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at FSM.sv(31): created implicit net for "sel_state" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 31
-Info (12127): Elaborating entity "RandomGen_tb" for the top level hierarchy
-Warning (10755): Verilog HDL warning at RandomGen_tb.sv(18): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 18
-Warning (10175): Verilog HDL warning at RandomGen_tb.sv(26): ignoring unsupported system task File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 26
-Info (12128): Elaborating entity "RandomGen" for hierarchy "RandomGen:randomGen_inst" File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 15
-Warning (10855): Verilog HDL warning at RandomGen.sv(11): initial value for variable lfsr should be constant File: C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv Line: 11
-Info (144001): Generated suppressed messages file C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info (12023): Found entity 1: RandomGen_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
+    Info (12023): Found entity 1: FSM_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 1
+Info (12127): Elaborating entity "FSM_tb" for the top level hierarchy
+Warning (10755): Verilog HDL warning at FSM_tb.sv(31): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 31
+Warning (10175): Verilog HDL warning at FSM_tb.sv(53): ignoring unsupported system task File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 53
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:uut" File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 28
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 4
+Info (144001): Generated suppressed messages file C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Wed Apr 17 11:37:45 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Thu Apr 18 23:55:35 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg.
+The suppressed messages can be found in C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg.
 
 

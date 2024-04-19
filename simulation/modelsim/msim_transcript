@@ -10,44 +10,44 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:37:52 on Apr 17,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv 
-# -- Compiling module RandomGen
+# Start time: 23:55:43 on Apr 18,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv 
+# -- Compiling module FSM
 # 
 # Top level modules:
-# 	RandomGen
-# End time: 11:37:52 on Apr 17,2024, Elapsed time: 0:00:00
+# 	FSM
+# End time: 23:55:43 on Apr 18,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:37:52 on Apr 17,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv 
-# -- Compiling module RandomGen_tb
+# Start time: 23:55:43 on Apr 18,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv 
+# -- Compiling module FSM_tb
 # 
 # Top level modules:
-# 	RandomGen_tb
-# End time: 11:37:52 on Apr 17,2024, Elapsed time: 0:00:00
+# 	FSM_tb
+# End time: 23:55:44 on Apr 18,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll {C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:37:52 on Apr 17,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv 
-# -- Compiling module RandomGen_tb
+# Start time: 23:55:44 on Apr 18,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll" C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv 
+# -- Compiling module FSM_tb
 # 
 # Top level modules:
-# 	RandomGen_tb
-# End time: 11:37:52 on Apr 17,2024, Elapsed time: 0:00:00
+# 	FSM_tb
+# End time: 23:55:44 on Apr 18,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  RandomGen_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" RandomGen_tb 
-# Start time: 11:37:52 on Apr 17,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
+# Start time: 23:55:44 on Apr 18,2024
 # Loading sv_std.std
-# Loading work.RandomGen_tb
-# Loading work.RandomGen
+# Loading work.FSM_tb
+# Loading work.FSM
 # 
 # add wave *
 # view structure
@@ -55,111 +55,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Random number: xx
-# Random number: ff
-# Random number: ff
-# Random number: ff
-# Random number: fe
-# Random number: fd
-# Random number: fa
-# Random number: f4
-# Random number: e8
-# Random number: d0
-# Random number: a0
-# Random number: 41
-# Random number: 83
-# Random number: 07
-# Random number: 0e
-# Random number: 1c
-# Random number: 38
-# Random number: 70
-# Random number: e1
-# Random number: c2
-# Random number: 84
-# Random number: 09
-# Random number: 12
-# Random number: 24
-# Random number: 48
-# Random number: 91
-# Random number: 23
-# Random number: 46
-# Random number: 8d
-# Random number: 1b
-# Random number: 36
-# Random number: 6c
-# Random number: d9
-# Random number: b2
-# Random number: 65
-# Random number: cb
-# Random number: 96
-# Random number: 2d
-# Random number: 5a
-# Random number: b5
-# Random number: 6b
-# Random number: d7
-# Random number: ae
-# Random number: 5d
-# Random number: bb
-# Random number: 77
-# Random number: ef
-# Random number: de
-# Random number: bc
-# Random number: 79
-# Random number: f3
-# Random number: e6
-# Random number: cc
-# Random number: 98
-# Random number: 31
-# Random number: 62
-# Random number: c5
-# Random number: 8a
-# Random number: 15
-# Random number: 2a
-# Random number: 54
-# Random number: a9
-# Random number: 53
-# Random number: a7
-# Random number: 4f
-# Random number: 9f
-# Random number: 3f
-# Random number: 7e
-# Random number: fd
-# Random number: fa
-# Random number: f4
-# Random number: e8
-# Random number: d0
-# Random number: a0
-# Random number: 41
-# Random number: 83
-# Random number: 07
-# Random number: 0e
-# Random number: 1c
-# Random number: 38
-# Random number: 70
-# Random number: e1
-# Random number: c2
-# Random number: 84
-# Random number: 09
-# Random number: 12
-# Random number: 24
-# Random number: 48
-# Random number: 91
-# Random number: 23
-# Random number: 46
-# Random number: 8d
-# Random number: 1b
-# Random number: 36
-# Random number: 6c
-# Random number: d9
-# Random number: b2
-# Random number: 65
-# Random number: cb
-# Random number: 96
-# Random number: 2d
-# Random number: 5a
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv(26)
-#    Time: 1020 ps  Iteration: 0  Instance: /RandomGen_tb
+# ** Note: $finish    : C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv(53)
+#    Time: 200 ps  Iteration: 0  Instance: /FSM_tb
 # 1
-# Break in Module RandomGen_tb at C:/Users/andre/Desktop/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv line 26
-# End time: 11:38:36 on Apr 17,2024, Elapsed time: 0:00:44
+# Break in Module FSM_tb at C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv line 53
+# End time: 23:56:28 on Apr 18,2024, Elapsed time: 0:00:44
 # Errors: 0, Warnings: 0
