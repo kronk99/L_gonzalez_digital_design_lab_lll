@@ -1,25 +1,24 @@
-Analysis & Elaboration report for Battleship
-Thu Apr 18 23:55:35 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis report for Battleship
+Fri Apr 19 14:34:44 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "FSM:uut"
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -36,47 +35,31 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Apr 18 23:55:35 2024       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; Battleship                                  ;
-; Top-level Entity Name         ; FSM_tb                                      ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 12          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Fri Apr 19 14:34:44 2024              ;
+; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name               ; Battleship                                     ;
+; Top-level Entity Name       ; pruebaWinner                                   ;
+; Family                      ; Cyclone V                                      ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; FSM_tb             ; Battleship         ;
+; Top-level entity name                                                           ; pruebaWinner       ; Battleship         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -157,89 +140,127 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FSM:uut"                                                                                 ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Timer     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Turno     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; TurnoPC   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; SBarcos   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; CBarcos   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; CVictoria ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; CDerrota  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Apr 18 23:55:28 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Battleship -c Battleship --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Fri Apr 19 14:34:08 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Battleship -c Battleship
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file battleship.sv
-    Info (12023): Found entity 1: Battleship File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 3
+    Info (12023): Found entity 1: FSM File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/FSM.sv Line: 1
+Error (10170): Verilog HDL syntax error at Battleship.sv(21) near text: "logic";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 21
+Error (10170): Verilog HDL syntax error at Battleship.sv(25) near text: "logic";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 25
+Error (10170): Verilog HDL syntax error at Battleship.sv(30) near text: "logic";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 30
+Error (10170): Verilog HDL syntax error at Battleship.sv(40) near text: "**";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 40
+Error (10149): Verilog HDL Declaration error at Battleship.sv(112): identifier "barco1" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 112
+Error (10149): Verilog HDL Declaration error at Battleship.sv(121): identifier "barco2" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 121
+Error (10149): Verilog HDL Declaration error at Battleship.sv(130): identifier "barco3" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 130
+Error (10149): Verilog HDL Declaration error at Battleship.sv(139): identifier "barco4" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 139
+Error (10149): Verilog HDL Declaration error at Battleship.sv(148): identifier "barco5" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 148
+Error (10149): Verilog HDL Declaration error at Battleship.sv(188): identifier "enemigosperdidos" is already declared in the present scope File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 188
+Error (10112): Ignored design unit "Battleship" at Battleship.sv(13) due to previous errors File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Battleship.sv Line: 13
+Info (12021): Found 0 design units, including 0 entities, in source file battleship.sv
 Info (12021): Found 1 design units, including 1 entities, in source file random.sv
-    Info (12023): Found entity 1: Random File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random.sv Line: 2
+    Info (12023): Found entity 1: Random File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Random.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file random_tb.sv
-    Info (12023): Found entity 1: Random_TB File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 3
+    Info (12023): Found entity 1: Random_TB File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/Random_TB.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file regcasillas.sv
-    Info (12023): Found entity 1: regCasillas File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas.sv Line: 5
+    Info (12023): Found entity 1: regCasillas File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regCasillas.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file comparadorsegundos.sv
-    Info (12023): Found entity 1: comparadorSegundos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/comparadorSegundos.sv Line: 3
+    Info (12023): Found entity 1: comparadorSegundos File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/comparadorSegundos.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file regbarcosperdidos.sv
-    Info (12023): Found entity 1: regBarcosperdidos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos.sv Line: 1
+    Info (12023): Found entity 1: regBarcosperdidos File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos.sv
-    Info (12023): Found entity 1: regCiclos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
+    Info (12023): Found entity 1: regCiclos File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regCiclos.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos.sv
-    Info (12023): Found entity 1: registroBarcos File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 26
+    Info (12023): Found entity 1: registroBarcos File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroBarcos.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file regciclos_tb.sv
-    Info (12023): Found entity 1: regCiclos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
+    Info (12023): Found entity 1: regCiclos_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regCiclos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrobarcos_tb.sv
-    Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
+    Info (12023): Found entity 1: registroBarcos_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroBarcos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrob1.sv
-    Info (12023): Found entity 1: registroB1 File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at registroB1_tb.sv(21): ignored dangling comma in List of Port Connections File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 21
+    Info (12023): Found entity 1: registroB1 File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroB1.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at registroB1_tb.sv(21): ignored dangling comma in List of Port Connections File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file registrob1_tb.sv
-    Info (12023): Found entity 1: registroB1_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 1
+    Info (12023): Found entity 1: registroB1_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroB1_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrob.sv
-    Info (12023): Found entity 1: registroB File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB.sv Line: 4
+    Info (12023): Found entity 1: registroB File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroB.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file registrob_tb.sv
-    Info (12023): Found entity 1: registroB_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/registroB_tb.sv Line: 1
+    Info (12023): Found entity 1: registroB_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/registroB_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regbarcosperdidos_tb.sv
-    Info (12023): Found entity 1: regBarcosperdidos_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos_tb.sv Line: 1
+    Info (12023): Found entity 1: regBarcosperdidos_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regBarcosperdidos_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regcasillas_tb.sv
-    Info (12023): Found entity 1: regCasillas_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv Line: 1
+    Info (12023): Found entity 1: regCasillas_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/regCasillas_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file randomgen.sv
-    Info (12023): Found entity 1: RandomGen File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen.sv Line: 1
+    Info (12023): Found entity 1: RandomGen File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/RandomGen.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file randomgen_tb.sv
-    Info (12023): Found entity 1: RandomGen_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 1
+    Info (12023): Found entity 1: RandomGen_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/RandomGen_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
-    Info (12023): Found entity 1: FSM_tb File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 1
-Info (12127): Elaborating entity "FSM_tb" for the top level hierarchy
-Warning (10755): Verilog HDL warning at FSM_tb.sv(31): assignments to clk create a combinational loop File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 31
-Warning (10175): Verilog HDL warning at FSM_tb.sv(53): ignoring unsupported system task File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 53
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:uut" File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 28
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 4
-Info (144001): Generated suppressed messages file C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Thu Apr 18 23:55:35 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info (12023): Found entity 1: FSM_tb File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/FSM_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file casillatoselect.sv
+    Info (12023): Found entity 1: casillatoSelect File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/casillatoSelect.sv Line: 1
+Error (10170): Verilog HDL syntax error at comparadorPerdidos.sv(3) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/comparadorPerdidos.sv Line: 3
+Error (10171): Verilog HDL syntax error at comparadorPerdidos.sv(3) near end of file ;  expecting "endmodule" File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/comparadorPerdidos.sv Line: 3
+Info (12021): Found 0 design units, including 0 entities, in source file comparadorperdidos.sv
+Info (12021): Found 1 design units, including 1 entities, in source file setearbarcos.sv
+    Info (12023): Found entity 1: setearBarcos File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/setearBarcos.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_casillas.sv
+    Info (12023): Found entity 1: contador_casillas File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_casillas.sv Line: 1
+Error (10170): Verilog HDL syntax error at contador_select.sv(4) near text: "always_ff";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_select.sv Line: 4
+Error (10170): Verilog HDL syntax error at contador_select.sv(20) near text: "endmodule";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_select.sv Line: 20
+Info (12021): Found 0 design units, including 0 entities, in source file contador_select.sv
+Error (10170): Verilog HDL syntax error at asignarRegistros.sv(35) near text: "endcase";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/asignarRegistros.sv Line: 35
+Error (10112): Ignored design unit "asignarRegistros" at asignarRegistros.sv(1) due to previous errors File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/asignarRegistros.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file asignarregistros.sv
+Error (10170): Verilog HDL syntax error at winner.sv(31) near text: "endmodule";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/winner.sv Line: 31
+Info (12021): Found 0 design units, including 0 entities, in source file winner.sv
+Info (12021): Found 1 design units, including 1 entities, in source file pruebawinner.sv
+    Info (12023): Found entity 1: Battleship File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/pruebaWinner.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_horizontal.sv
+    Info (12023): Found entity 1: contador_horizontal File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_horizontal.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_parametrizable.sv
+    Info (12023): Found entity 1: contador_parametrizable File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_parametrizable.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_mayor.sv
+    Info (12023): Found entity 1: comparador_mayor File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/comparador_mayor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_igual.sv
+    Info (12023): Found entity 1: comparador_igual File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/comparador_igual.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock25mh.sv
+    Info (12023): Found entity 1: clock25mh File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/clock25mh.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_vertical.sv
+    Info (12023): Found entity 1: contador_vertical File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/contador_vertical.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlador_vga.sv
+    Info (12023): Found entity 1: controlador_vga File: C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/controlador_vga.sv Line: 1
+Info (144001): Generated suppressed messages file C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 18 errors, 2 warnings
+    Error: Peak virtual memory: 4788 megabytes
+    Error: Processing ended: Fri Apr 19 14:34:44 2024
+    Error: Elapsed time: 00:00:36
+    Error: Total CPU time (on all processors): 00:00:41
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/andre/Desktop/TEC/TallerDigital/Lab3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Luis/Desktop/lab 3/L_gonzalez_digital_design_lab_lll/output_files/Battleship.map.smsg.
 
 

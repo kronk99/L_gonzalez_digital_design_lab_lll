@@ -1,0 +1,3 @@
+module comparadorPerdidos(input logic [4:0] barcosperdidos , output logic wincond );
+	assign windcond = (barcosperdidos == 5'b11111) ? 1 : 0;
+end

@@ -1,0 +1,13 @@
+module setearBarcos(input logic clk , enable, input logic [4:0] numeroBarcos , output logic numeroB);
+	reg numeroB;
+	always_ff @(posedge clk) begin
+		if(rst)begin
+			numeroB <=0;
+		end 
+		else begin
+			if(enable)begin
+				numeroB = bitcount(array);
+			end
+		end
+   end
+endmodule

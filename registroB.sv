@@ -1,6 +1,6 @@
 //Registra donde esta la primera casilla del barco, y que tamano tiene. 
 //Con esta informacion se puede predecir las casillas del barco
-
+//no se modifica.
 module registroB(input clk, rst, enable,input [2:0] tipo, input [4:0] casilla, output [4:0] barco, output [2:0] tipob);
 
 logic [4:0] temporal ; //Para trabajar de manera interna con el arreglo

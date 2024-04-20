@@ -1,0 +1,14 @@
+module contador_select(input clk, rst,enable, button_signal , output logic [2:0] result );
+	reg [2:0] numBarco; //me dice que numero 
+	always_ff @(posedge clk) begin
+        if (rst) begin
+            numBarco <= 3'b001; // Utiliza <= en lugar de <=
+        end 
+        else begin
+            if (enable && button_signal) begin
+                numBarco <= numBarco +1; // Utiliza $countones en lugar de bitcount
+            end
+        end
+    end
+	 assign result =numBarco
+endmodule
